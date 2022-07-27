@@ -13,20 +13,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:tint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_left_arrow" />
+        app:srcCompat="@drawable/ic_left_arrow"
+        app:tint="@color/white" />
 
     <ImageView
         android:id="@+id/homeBtn"
         android:layout_width="16dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:tint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/backBtn"
-        app:srcCompat="@drawable/ic_home" />
+        app:srcCompat="@drawable/ic_home"
+        app:tint="@color/white" />
 
     <ImageView
         android:id="@+id/image"
