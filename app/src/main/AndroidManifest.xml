@@ -15,16 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pico">
-        <activity
-            android:name=".SplashActivity"
-            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-4780859766083783~9311213698" />
 
         <activity android:name=".ResultActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+
+            />
+
+        <activity android:name=".SplashActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

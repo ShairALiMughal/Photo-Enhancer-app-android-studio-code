@@ -15,18 +15,26 @@ import com.dsphotoeditor.sdk.utils.DsPhotoEditorConstants
 import com.mianasad.PhotoEnhancer.ResultActivity
 import android.graphics.Bitmap
 import android.net.Uri
+import android.os.Handler
+import androidx.core.os.HandlerCompat.postDelayed
 import com.google.android.gms.ads.AdRequest
 import com.mianasad.PhotoEnhancer.databinding.ActivityMainBinding
 import java.io.ByteArrayOutputStream
 
 class MainActivity : AppCompatActivity() {
+
     var binding: ActivityMainBinding? = null
     var IMAGE_REQUEST_CODE = 45
     var CAMERA_REQUEST_CODE = 14
     var RESULT_CODE = 200
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
+
+
         setContentView(binding!!.root)
         MobileAds.initialize(this) { }
         val adRequest = AdRequest.Builder().build()
